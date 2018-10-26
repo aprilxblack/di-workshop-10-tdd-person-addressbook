@@ -1,0 +1,40 @@
+[
+  {
+    "firstName": "Joe",
+    "surname": "Bloggs",
+    "dob": "1 Jan 1990",
+    "emails": [
+      "joe@example.com"
+    ],
+    "phoneNumbers": [
+      "123456789"
+    ],
+    "pets": [
+      {
+        "name": "AdaCat",
+        "type": "cat"
+      }
+    ]
+  },
+  {
+    "firstName": "Jacob",
+    "surname": "Bloggs",
+    "dob": "1 Jan 2000",
+    "emails": [
+      "joe.bloggs@workexample.com"
+    ],
+    "phoneNumbers": [
+      "987654321"
+    ],
+    "pets": [
+      {
+        "name": "Rover",
+        "type": "dog"
+      },
+      {
+        "name": "Nemo",
+        "type": "goldfish"
+      }
+    ]
+  }
+]

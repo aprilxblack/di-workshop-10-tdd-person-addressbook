@@ -5,6 +5,7 @@ class Person {
         this.dob = dob;
         this.emails = [];
         this.phoneNumbers = [];
+        this.pets = [];
     }
 
     fullname(){
@@ -39,6 +40,10 @@ class Person {
         }
         
         return details + emailAdresses + '\n' + 'Phone Numbers:' + '\n' + phones;
+    }
+
+    addPet(pet){
+        this.pets.push(pet);
     }
 }
 
