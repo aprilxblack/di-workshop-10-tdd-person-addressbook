@@ -44,6 +44,12 @@ This is a short recap of some command line, git and Node.js stuff. There's no ne
 
 ## 2. Test driving a new class
 
+- [X] Constructor. Check it worked.
+- [X] Capitalizing first name.
+- [X] Fullname method.
+- [X] Emails attribute and addEmail.
+
+
 We'll walk throught the process of creating a class, practicing OOP and TDD as we go. Follow along in your editor as you watch the video.
 
 [**Open screencast**](https://adaapp.github.io/screencasts/person-workshop-2/index.html) (or use [youtube](https://youtu.be/T0LDcCN9FUM))
