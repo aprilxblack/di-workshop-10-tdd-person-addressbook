@@ -44,10 +44,16 @@ This is a short recap of some command line, git and Node.js stuff. There's no ne
 
 ## 2. Test driving a new class
 
+ ## Person
 - [X] Constructor. Check it worked.
 - [X] Capitalizing first name.
 - [X] Fullname method.
 - [X] Emails attribute and addEmail.
+
+## AdressBook
+
+- [ ] Create the class. Have entries attribute ([])
+- [ ] add method which takes a person object
 
 
 We'll walk throught the process of creating a class, practicing OOP and TDD as we go. Follow along in your editor as you watch the video.
