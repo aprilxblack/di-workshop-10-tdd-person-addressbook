@@ -3,7 +3,7 @@ const Person = require('../models/person.js');
 const Pet = require('../models/pet.js');
 var readLine = require('readline-sync')
 
-book = new AddressBook();
+var book = new AddressBook();
 
 var personSelected;
 
@@ -80,25 +80,25 @@ while(true){
     }
     else if (userInput == 'add pet'){
         console.log();
-        console.log('You are adding pet to: ' + personSelected.firstName + ' ' + personSelected.surname);
+        console.log('You are adding pet to: ' + personSelected.fullname());
         var petName = readLine.question('Your pet name: ');
         var petType = readLine.question('Your pet type: ');
         var pet = new Pet(petName, petType)
 
         for(var i = 0; i < book.entries.length; i++){
-            if(personSelected.firstName == book.entries[i].firstName && personSelected.surname == book.entries[i].surname){
-              book.entries[i].pets.push(pet);
+            if(personSelected.fullname() == book.entries[i].fullname()){
+              book.entries[i].addPet(pet);
             }
         }
     }
     else if(userInput == 'add email'){
         console.log();
-        console.log('You are adding email to: ' + personSelected.firstName + ' ' + personSelected.surname);
+        console.log('You are adding email to: ' + personSelected.fullname());
         var email = readLine.question('Your email: ');
 
         for(var i = 0; i < book.entries.length; i++){
-            if(personSelected.firstName == book.entries[i].firstName && personSelected.surname == book.entries[i].surname){
-              book.entries[i].emails.push(email);
+            if(personSelected.fullname() == book.entries[i].fullname()){
+              book.entries[i].addEmail(email);
             }
         }
     }
@@ -108,8 +108,8 @@ while(true){
         var phoneNumber = readLine.question('Your phone number: ');
 
         for(var i = 0; i < book.entries.length; i++){
-            if(personSelected.firstName == book.entries[i].firstName && personSelected.surname == book.entries[i].surname){
-              book.entries[i].phoneNumbers.push(phoneNumber);
+            if(personSelected.fullname() == book.entries[i].fullname()){
+              book.entries[i].addPhoneNumber(phoneNumber);
             }
         }
     }

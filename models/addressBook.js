@@ -1,4 +1,5 @@
 const fs = require('fs');
+const Person = require('../models/person.js');
 class AddressBook{
 
     constructor(){
@@ -70,8 +71,17 @@ class AddressBook{
     load(path){
         var loadedBook = fs.readFileSync(path, 'utf-8');
         loadedBook = JSON.parse(loadedBook);
+        var savedEntries = [];
 
-        this.entries = loadedBook;
+        for (var entry of loadedBook){
+            var person = new Person(entry.firstName, entry.surname, entry.dob);
+            person.emails = entry.emails;
+            person.phoneNumbers = entry.phoneNumbers;
+            person.pets = entry.pets;
+            savedEntries.push(person);
+        }
+
+        this.entries = savedEntries;
     }
 
     print(){

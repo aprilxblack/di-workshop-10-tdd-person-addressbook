@@ -1,0 +1,27 @@
+[
+  {
+    "firstName": "Karolina",
+    "surname": "Zdziarska",
+    "dob": "1 Apr 1994",
+    "emails": [
+      "karolina.zdziarska@gmail.com"
+    ],
+    "phoneNumbers": [
+      "1234567"
+    ],
+    "pets": [
+      {
+        "name": "Gabi",
+        "type": "cat"
+      }
+    ]
+  },
+  {
+    "firstName": "Karolinaaaa",
+    "surname": "Zdziarskaaaa",
+    "dob": "1 Jan 2000",
+    "emails": [],
+    "phoneNumbers": [],
+    "pets": []
+  }
+]
